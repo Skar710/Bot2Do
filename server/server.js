@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 const PORT = 5000;
-mongoose.connect("mongodb+srv://karshubhakant:Skar7100@cluster0.keezg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log('MongoDB connected')).catch(err => console.log("oops",err));
+mongoose.connect("DBLink").then(() => console.log('MongoDB connected')).catch(err => console.log("oops",err));
 
 
 const LoginSchema = new mongoose.Schema({
